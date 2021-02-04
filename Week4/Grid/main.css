@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+div, header, footer, section {
+    min-height: 4rem;
+}
+
+.column {
+    background-color: rgb(40, 40, 40);
+    border: 0.5em solid rgb(191, 191, 191);
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.columnlong {
+    background-color: rgb(40, 40, 40);
+    border: 0.5em solid rgb(191, 191, 191);
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.27em;
+}
+
+.sub-row .column {
+    border: none;
+    font-family:  'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.row {
+    display: grid;
+    width: 85vw;
+    min-width: 60rem;
+    max-width: 85rem;
+    margin: 0 auto;
+}
+
+.col-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.col-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.col-1-2 {
+    grid-template-columns: 0.5fr 2fr;
+}
+
+.row-span {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.sub-row {
+    display: grid;
+}
+
+@media only screen and (min-width: 35em) {
+    html {
+        width: 100%;
+    }
+}
